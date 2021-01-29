@@ -1,3 +1,6 @@
+# Description:  Miller arrays to plot of bin mean intensity over dstar
+# Source:  NA
+
 """
 from iotbx.file_reader import any_file
 import matplotlib.pyplot as plt
@@ -30,16 +33,16 @@ centers = binner.bin_centers(d_star_power)
 d_centers = list(centers**(-1 / d_star_power))
 d_centers
 
-# plt.ylabel('Natural log of the amplitudes squared')
-# plt.xlabel(r'$\textrm{d^*}$ in $\textrm{\AA}$')
+# plt.ylabel("Natural log of the amplitudes squared")
+# plt.xlabel(r"$\textrm{d^*}$ in $\textrm{\AA}$")
 # ax.set_xlim(35, 1.5)
 # plt.scatter(d_centers,lnmeanss)
 
 fig, ax = plt.subplots()
 ax.scatter(d_centers,lnmeans)
 ax.set_xlim(${3:8}, ${4:1.5})  # decreasing
-ax.set_xlabel(r'$d^*$ in $\AA$')
-ax.set_ylabel('Natural log of the intensities')
+ax.set_xlabel(r"$d^*$ in $\AA$")
+ax.set_ylabel("Natural log of the intensities")
 ax.grid(False)
 plt.savefig("${5:iobsvsdstar}.pdf")
 """
@@ -75,19 +78,15 @@ centers = binner.bin_centers(d_star_power)
 d_centers = list(centers**(-1 / d_star_power))
 d_centers
 
-# plt.ylabel('Natural log of the amplitudes squared')
-# plt.xlabel(r'$\textrm{d^*$ in $\textrm{\AA$')
+# plt.ylabel("Natural log of the amplitudes squared")
+# plt.xlabel(r"$\textrm{d^*$ in $\textrm{\AA$")
 # ax.set_xlim(35, 1.5)
 # plt.scatter(d_centers,lnmeanss)
 
 fig, ax = plt.subplots()
 ax.scatter(d_centers,lnmeans)
 ax.set_xlim(8, 1.5)  # decreasing
-ax.set_xlabel(r'$d^*$ in $\AA$')
-ax.set_ylabel('Natural log of the intensities')
+ax.set_xlabel(r"$d^*$ in $\AA$")
+ax.set_ylabel("Natural log of the intensities")
 ax.grid(False)
 plt.savefig("iobsvsdstar.pdf")
-
-# Description:  Miller arrays to plot of bin mean intensity over dstar
-# Source:  NA
-

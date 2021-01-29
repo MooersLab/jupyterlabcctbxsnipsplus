@@ -1,3 +1,6 @@
+# Description:  Miller arrays to convert CNS reflection file into an mtz file
+# Source:  NA
+
 """
 from iotbx import reflection_file_reader
 import os
@@ -35,7 +38,3 @@ for miller_array in miller_arrays:
             column_root_label=miller_array.info().labels[0])
 mtz_object = mtz_dataset.mtz_object() 
 mtz_object.show_summary()
-
-# Description:  Miller arrays to convert CNS reflection file into an mtz file
-# Source:  NA
-

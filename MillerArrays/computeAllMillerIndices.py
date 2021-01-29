@@ -1,3 +1,6 @@
+# Description:  Compute all possible Miller indices.
+# Source:  NA
+
 """
 from cctbx import miller
 
@@ -39,7 +42,3 @@ def generate_reflection_indices(uc, dmin):
     
 uc=(5.4307,5.4307,5.4307,90.00,90.0,90.00)
 dmin=1.0
-
-# Description:  Compute all possible Miller indices.
-# Source:  NA
-

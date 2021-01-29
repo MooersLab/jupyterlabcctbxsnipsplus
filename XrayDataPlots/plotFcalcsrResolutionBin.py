@@ -1,5 +1,8 @@
+# Description:  Example of computing Fcalcs and then plotting them by resolution bin. This script uses miller arrays and binner.
+# Source:  NA
+
 """
-""" 
+'''
 This script reads in a phenix.refine mtz file.
 It plots the R-factor by resolution bin.
 The plots are made with matplotlib using miller arrays.
@@ -10,10 +13,10 @@ This script was adapted from an example script in iotbx:
 
 Source:  https://github.com/cctbx/cctbx_project/blob/master/
 iotbx/examples/recalculate_phenix_refine_r_factors.py
-"""
+'''
 
 
-# get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic("matplotlib", "inline")
 
 from __future__ import absolute_import, division, print_function
 from iotbx.reflection_file_utils import get_r_free_flags_scores
@@ -134,7 +137,7 @@ def run(input_mtz):
 if (__name__ == "__main__"):
   run(input_mtz="${1:28molrepEdited_5_refine_001}.mtz")"""
 
-""" 
+'''
 This script reads in a phenix.refine mtz file.
 It plots the R-factor by resolution bin.
 The plots are made with matplotlib using miller arrays.
@@ -145,10 +148,10 @@ This script was adapted from an example script in iotbx:
 
 Source:  https://github.com/cctbx/cctbx_project/blob/master/
 iotbx/examples/recalculate_phenix_refine_r_factors.py
-"""
+'''
 
 
-# get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic("matplotlib", "inline")
 
 from __future__ import absolute_import, division, print_function
 from iotbx.reflection_file_utils import get_r_free_flags_scores
@@ -268,6 +271,3 @@ def run(input_mtz):
 
 if (__name__ == "__main__"):
   run(input_mtz="28molrepEdited_5_refine_001.mtz")
-# Description:  Example of computing Fcalcs and then plotting them by resolution bin. This script uses miller arrays and binner.
-# Source:  NA
-

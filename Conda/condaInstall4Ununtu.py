@@ -1,6 +1,9 @@
+# Description:  Enter this snippet on the command line in an empty directory.
+# Source:  NA
+
 """
 apt install nodejs git
-wget -P /tmp /https://repo.anaconda.com/archive/${1:Anaconda3-2020.02-Linux-x86_64.sh}
+wget https://repo.anaconda.com/archive/${1:Anaconda3-2020.02-Linux-x86_64.sh}
 bash ${1:Anaconda3-2020.02-Linux-x86_64.sh}
 conda create -n ${2:pc37} python=3.7 schrodinger::pymol-bundle=2.4.1 conda-forge::cctbx-base conda-forge::jupyter
 conda activate ${2:pc37}
@@ -23,7 +26,7 @@ jupyter lab # or libtbx.python -m jupyter-lab
 """
 
 apt install nodejs git
-wget -P /tmp /https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
 bash Anaconda3-2020.02-Linux-x86_64.sh
 conda create -n pc37 python=3.7 schrodinger::pymol-bundle=2.4.1 conda-forge::cctbx-base conda-forge::jupyter
 conda activate pc37
@@ -43,7 +46,3 @@ git clone https://github.com/MooersLab/juptyerlabpymolcctbxplus.git cctbx+
 git clone https://github.com/MooersLab/juptyerlabpymolpysnips.git pymol
 git clone https://github.com/MooersLab/juptyerlabpymolpysnipsplus.git pymol+
 jupyter lab # or libtbx.python -m jupyter-lab
-
-# Description:  Enter this snippet on the command line in an empty directory.
-# Source:  NA
-

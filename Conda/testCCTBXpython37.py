@@ -1,3 +1,6 @@
+# Description:  Bash script to test new install with Python3.7.
+# Source:  NA
+
 """
 #! /bin/sh
 set noglob
@@ -32,6 +35,3 @@ libtbx.python $CONDA_PREFIX/lib/python3.7/site-packages/reduce/run_tests.py
 libtbx.python $CONDA_PREFIX/lib/python3.7/site-packages/mmtbx/run_tests.py
 libtbx.python $CONDA_PREFIX/lib/python3.7/site-packages/cctbx_website/run_tests.py
 libtbx.python $CONDA_PREFIX/lib/python3.7/site-packages/gltbx/run_tests.py
-# Description:  Bash script to test new install with Python3.7.
-# Source:  NA
-
